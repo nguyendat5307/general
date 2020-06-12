@@ -1,0 +1,23 @@
+1. Create a GitHub account
+2. Create a new repository
+3. Create a file
+Open Terminal
+Create a directory
+	mkdir Demo
+Change the terminal to the Demo directory
+	cd Demo
+Create a file named README.md and write #Demo in it
+	echo "#Demo" >> README.md
+Tell computer that Demo is a directory managed by the Git program
+	git init
+**Tell the Git program you care about this file and want to track any changes from this
+	git add README.md
+4. Make a commit
+"Every time you accomplish some work, you can write a Git commit to store that version of your file, so you can go back later and see what it looked like at that point in the time"
+**To make a commit:
+	git commit -m "first commit"
+"first commit" is a message in commit that enables you to understand what you did with the file at that point
+5. Connect GitHub repo with computer
+	git remote add <url's name> https://github.com/<username>/Demo.git
+**6. Push the file from computer to repo
+	git push -u origin master
